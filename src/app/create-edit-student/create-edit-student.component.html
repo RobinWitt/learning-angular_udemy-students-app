@@ -1,0 +1,56 @@
+<div class="card">
+  <div class="card-header"><h2>Create/Edit Student</h2></div>
+  <div class="card-body">
+    <form>
+      <div class="row">
+        <div class="col">
+          <label class="form-label" for="firstName">Student First Name</label>
+          <input
+            class="form-control mb-3"
+            id="firstName"
+            name="firstName"
+            type="text"
+            [(ngModel)]="student.firstName"
+          />
+        </div>
+        <div class="col">
+          <label class="form-label" for="lastName">Student Last Name</label>
+          <input
+            class="form-control mb-3"
+            id="lastName"
+            name="lastName"
+            type="text"
+            [(ngModel)]="student.lastName"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label class="form-label" for="mainClass">Student Main Class</label>
+          <input
+            class="form-control mb-3"
+            id="mainClass"
+            name="mainClass"
+            type="text"
+            [(ngModel)]="student.mainClass"
+          />
+        </div>
+      </div>
+      <div class="mb-3 form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="isActive"
+          name="isActive"
+          [(ngModel)]="student.isActive"
+        />
+        <label class="form-check-label" for="isActive">Student is active</label>
+      </div>
+    </form>
+  </div>
+  <div class="card-footer">
+    <button (click)="create()" type="submit" class="btn btn-primary">
+      Submit
+    </button>
+  </div>
+</div>

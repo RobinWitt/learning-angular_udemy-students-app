@@ -1,0 +1,25 @@
+<ul class="ps-0">
+  <li class="list-group-item" *ngFor="let student of students">
+    <div class="card">
+      <div
+        class="card-header {{ student.isActive && 'bg-success bg-opacity-50' }}"
+      >
+        <p class="fs-4 fw-bold">
+          {{ student.firstName }} {{ student.lastName }}
+        </p>
+      </div>
+      <div class="card-body">
+        <span>{{ student.mainClass }}</span>
+      </div>
+      <div class="card-footer d-flex gap-2">
+        <button class="btn btn-sm btn-success">Change</button>
+        <button
+          (click)="deleteStudent(student.id)"
+          class="btn btn-sm btn-danger"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </li>
+</ul>

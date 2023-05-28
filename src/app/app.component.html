@@ -1,2 +1,24 @@
-<h1>Students</h1>
-<router-outlet></router-outlet>
+<header class="p-3 mb-3 border-bottom">
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <h1>Students</h1>
+      <div class="d-flex">
+        <a routerLink="/" class="nav-link">Overview</a>
+        <a routerLink="/create-edit-student" class="nav-link">New Student</a>
+      </div>
+
+      <!-- <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+    </div>
+  </nav>
+</header>
+<main class="m-4">
+  <router-outlet></router-outlet>
+</main>
