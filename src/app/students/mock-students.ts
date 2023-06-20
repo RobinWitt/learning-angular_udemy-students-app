@@ -3,21 +3,21 @@ import { Student } from './student';
 
 export const Students: Student[] = [
   {
-    id: '1',
+    id: '1dflah',
     firstName: 'Max',
     lastName: 'Muster',
     mainClass: 'Mathematics',
     isActive: true,
   },
   {
-    id: '2',
+    id: '2eqot',
     firstName: 'Jane',
     lastName: 'Doe',
     mainClass: 'Biology',
     isActive: true,
   },
   {
-    id: '3',
+    id: '3lbvy',
     firstName: 'John',
     lastName: 'Roe',
     mainClass: 'Sports',

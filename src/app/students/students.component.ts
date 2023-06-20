@@ -14,5 +14,6 @@ export class StudentsComponent {
     let newStudents = Students.filter((student) => student.id !== id);
 
     console.log('DELETE:', id);
+    console.log('UPDATED STUDENTS:', newStudents);
   }
 }

@@ -12,7 +12,11 @@
         <span>{{ student.mainClass }}</span>
       </div>
       <div class="card-footer d-flex gap-2">
-        <button class="btn btn-sm btn-success">Change</button>
+        <a
+          routerLink="/edit-student/{{ student.id }}"
+          class="btn btn-sm btn-success"
+          >Change</a
+        >
         <button
           (click)="deleteStudent(student.id)"
           class="btn btn-sm btn-danger"
